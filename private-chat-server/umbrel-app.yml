@@ -2,7 +2,7 @@ manifestVersion: 1
 id: private-chat-server
 name: Private Chat Server
 tagline: A secure, ephemeral chat application with no history, logs, tracking, or authentication.
-icon: https://privatechat.network/logo.png
+icon: https://privatechat.network/logo-full.png
 category: Social
 version: "1.1.0"
 port: 8000
