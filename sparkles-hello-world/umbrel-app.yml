@@ -1,29 +1,50 @@
 manifestVersion: 1
-id: sparkles-hello-world
-name: Hello World
-tagline: Replace this tagline with your app's tagline
-icon: https://svgur.com/i/mvA.svg
-category: Development
-version: "1.0.0"
-port: 4000
+id: private-chat-server
+name: Private Chat Server
+tagline: A secure, ephemeral chat application with no history, logs, tracking, or authentication.
+icon: https://privatechat.network/logo.png
+category: Social
+version: "1.1.0"
+port: 8000
 description: >-
-  Add your app's description here.
+  Privacy Highlights
+  🔒 No Message Storage: Messages are only relayed between participants and never stored.
+  🚫 No Logs: Production mode disables all logging to prevent metadata leaks.
+  🔗 No Third-Party Services: Operates independently without reliance on external services.
+  📡 Encrypted Transmission: All communication is secured via encrypted WebSockets.
+  🛠 Open Source: Full transparency — anyone can inspect and verify how Private Chat handles data.
 
+  How It Works
+  You select a nickname and a room and join. Every message you send is relayed to a backend server, encrypted using a secure WebSocket protocol. The server broadcasts your message to every participant in the room, leaving no logs, no trace, and storing no messages. When a participant leaves the room, the history is lost forever. Only new messages can be seen by the current chat participants.
 
-  You can also add newlines!
-
-developer: Umbrel
-website: https://umbrel.com
-submitter: Umbrel
-submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
-support: https://github.com/getumbrel/umbrel-hello-world-app/issues
+developer: Carlos Lugones
+website: https://carloslugones.com
+submitter: Carlos Lugones
+submission:
+repo: https://github.com/CarlosLugones/private-chat-umbrel
+support: https://github.com/CarlosLugones/private-chat-umbrel/issues
 gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://privatechat.network/opengraph-image.png
 releaseNotes: >-
-  Add what's new in the latest version of your app here.
+  New features:
+  * Emojies
+  * Send and receive images
+  * Drag & Drop image
+  * Paste image into the chat
+  * Attach image from files
+  * Optional caption on images
+  * Nickname validation
+  * Clean nickname
+  * Copy room name
+  * Highlight usernames (@username)
+  * Highlight room names (#room)
+  * Highlight links
+  * Format code
+  * Capture nickname on room if not defined
+  
+  Improvements
+  * Improved design and chat experience
+  * Improved connection indicator
 dependencies: []
 path: ""
 defaultUsername: ""
