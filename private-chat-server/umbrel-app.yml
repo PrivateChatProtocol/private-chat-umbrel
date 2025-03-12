@@ -4,7 +4,7 @@ name: Private Chat Server
 tagline: A secure, ephemeral chat application with no history, logs, tracking, or authentication.
 icon: https://privatechat.network/logo-full.png
 category: Social
-version: "1.1.0"
+version: "1.2.0"
 port: 8000
 description: >-
   Privacy Highlights
@@ -28,47 +28,27 @@ developer: Carlos Lugones
 website: https://carloslugones.com
 submitter: Carlos Lugones
 submission:
-repo: https://github.com/CarlosLugones/private-chat-umbrel
-support: https://github.com/CarlosLugones/private-chat-umbrel/issues
+repo: https://github.com/PrivateChatProtocol/private-chat-umbrel
+support: https://github.com/PrivateChatProtocol/private-chat-umbrel/issues
 gallery:
   - https://privatechat.network/opengraph-image.png
 releaseNotes: >-
   New features:
-  
-  * Emojies
-  
-  * Send and receive images
-  
-  * Drag & Drop image
-  
-  * Paste image into the chat
-  
-  * Attach image from files
-  
-  * Optional caption on images
-  
-  * Nickname validation
-  
-  * Clean nickname
-  
-  * Copy room name
-  
-  * Highlight usernames (@username)
-  
-  * Highlight room names (#room)
-  
-  * Highlight links
 
-  * Format code
+  * Added API endpoint on / to serve HTML landing page if the user agent is a browser, or JSON if not.
 
-  * Capture nickname on room if not defined
+  * Listen on port passed by parameter.
+
   
+  Improvements:
 
-  Improvements
+  * Improved types.
 
-  * Improved design and chat experience
+  * Updated docs.
 
-  * Improved connection indicator
+  * Updated docker schema.
+  
+  * Repo was moved to PrivateChatProtocol/private-chat-server.
 dependencies: []
 path: ""
 defaultUsername: ""
